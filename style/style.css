@@ -33,10 +33,27 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.main-container .header-container__left svg {
+.main-container .header-container__left .header__menu-container--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.main-container .header-container__left .header__menu-container--left:hover {
+  background-color: #f0f0f0;
+}
+.main-container .header-container__left .header__menu-container--left svg {
   width: 26px;
   height: 26px;
-  margin-right: 16px;
 }
 .main-container .header-container__left .header__logo-container img {
   width: 80px;
