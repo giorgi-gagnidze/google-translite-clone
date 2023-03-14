@@ -100,6 +100,32 @@ html {
         }
       }
     }
+    footer {
+      max-width: 400px;
+      margin: 70px auto;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      & .bi {
+        padding: 20px;
+        border-radius: 50%;
+        border: 1px solid #d8d8d8;
+        color: #757575;
+      }
+      & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      & p {
+        font-size: 14px;
+        font-family: $roboto;
+        color: #757575;
+        margin-top: 8px;
+      }
+    }
   }
   .textarea-container {
     display: flex;
@@ -207,6 +233,21 @@ html {
     }
     .language-right {
       padding-left: 20px;
+    }
+    .send-feedback {
+      a {
+        text-align: right;
+        font-family: $roboto;
+        font-size: 12px;
+        font-style: italic;
+        color: #5f6368;
+        margin-top: 6px;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
