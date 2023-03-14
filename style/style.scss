@@ -12,6 +12,10 @@ $roboto: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .main-container {
   width: 100%;
   & .header-container {
@@ -81,7 +85,7 @@ $roboto: "Roboto", sans-serif;
           color: rgb(25, 103, 210);
           text-decoration: none;
           font-family: $roboto;
-          font-size: 0.875rem;
+          font-size: 1.4rem;
           letter-spacing: 0.0107142857em;
           font-weight: 500;
           border: 1px solid #d3d3d3;
@@ -95,6 +99,114 @@ $roboto: "Roboto", sans-serif;
           }
         }
       }
+    }
+  }
+  .textarea-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+    &__inner {
+      width: 50%;
+      position: relative;
+      &--language {
+        &-list {
+          display: flex;
+          list-style: none;
+          font-family: $roboto;
+          font-size: 1.4rem;
+          .language--list__item {
+            padding: 16px 8px;
+            display: inline-block;
+            cursor: pointer;
+            &:hover {
+              background-color: #f7f8f8;
+            }
+          }
+          .arrow-item {
+            margin-left: 22px;
+            border-radius: 50%;
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .bi-arrow-left-right {
+        position: absolute;
+        top: 16px;
+        right: -12px;
+        font-size: 16px;
+      }
+    }
+    &__left {
+      width: 100%;
+      min-height: 170px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      padding: 20px 20px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .icons-container {
+        display: flex;
+        justify-content: space-between;
+        &__inner {
+          display: flex;
+          color: #9a9a9a;
+          align-items: center;
+        }
+        p {
+          font-family: $roboto;
+          font-size: 14px;
+          margin-right: 24px;
+        }
+        .bi-mic-fill {
+          font-size: 16px;
+        }
+        .bi-keyboard {
+          font-size: 18px;
+          margin-right: 10px;
+        }
+        .bi-caret-down-fill {
+          font-size: 8px;
+          align-self: flex-start;
+          margin-top: 10px;
+        }
+        .bi-mic-fill {
+          color: #5f6368;
+          padding: 10px;
+          border-radius: 50%;
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+      }
+      & > textarea {
+        width: 100%;
+        min-height: 49px;
+        border: none;
+        resize: none;
+        outline: none;
+        font-size: 24px;
+        font-family: $roboto;
+        color: #5f6368;
+      }
+    }
+    &__right {
+      width: 100%;
+      min-height: 170px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px 58px 20px 24px;
+      &--text {
+        font-size: 24px;
+        font-family: $roboto;
+        color: #5f6368;
+      }
+    }
+    .language-right {
+      padding-left: 20px;
     }
   }
 }
